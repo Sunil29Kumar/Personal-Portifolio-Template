@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    background-color: #FFFFFF;
+    font-family: Poppins, sans-serif;
+}
+
+::selection{
+    color: white;
+    background-color: #9A79D2;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8492FF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b5394;
+}
+
+
+
+/*----------------- nav -----------------*/
+.main nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: .3s ease-in-out;
+}
+
+/*--- nav ul ---- */
+.main nav .ul {
+    display: flex;
+    gap: 2vw;
+}
+
+nav .ul li {
+    list-style-type: none;
+}
+
+nav .ul li a {
+    position: relative;
+    font-size: .8rem;
+    text-decoration: none;
+    color: rgb(66, 65, 65);
+    font-weight: 600;
+    transition: .2s linear;
+}
+
+nav .ul li .fnavchild {
+    color: #8492FF;
+}
+nav .ul li a:hover {
+    color: #8492FF;
+}
+
+/* -------------- drow down1 --------------- */
+
+nav .dropdown1 {
+    position: absolute;
+    width: 12vw;
+    height: 5vh;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    box-shadow: #8492FF 0px 1px 9px;
+    visibility: hidden;
+    opacity: 0;
+    top: 15vh;
+}
+
+nav ul li:hover>.dropdown1 {
+    visibility: visible;
+    top: 12vh;
+    opacity: 1;
+}
+
+nav .dropdown1 li a {
+    color: rgb(113, 112, 112);
+    line-height: 0;
+}
+
+/*------- menu ----------  */
+.menu {
+    display: none;
+}
+
+.menu i {
+    font-size: 1.5rem;
+    color: #8492FF;
+    cursor: pointer;
+}
+
+.menu .cross {
+    display: none;
+}
+
+.menu .bar {
+    display: none;
+}
+
+
+/*---------------- this me --------------------- */
+.main .this-me {
+    padding: 0 7rem;
+    display: flex;
+}
+
+/* me-left  */
+.main .this-me .me-left {
+    width: 45%;
+    height: 80vh;
+    padding-top: 8.5rem;
+}
+
+.this-me .me-left h2 {
+    font-size: 1.2rem;
+    color: rgb(90, 90, 90);
+}
+
+.me-left h1 {
+    font-size: 4rem;
+    color: rgb(45, 45, 45);
+}
+
+.me-left p {
+    font-size: .9rem;
+    color: rgb(117, 117, 117);
+    margin-top: 1rem;
+}
+
+.me-left .me-butn{
+    margin-top: 2.5rem;
+    width: 12vw;
+    height: 8vh;
+    position: relative;
+    background-color: #000000;
+}
+
+.me-left .me-butn .btn1 {
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+}
+.me-left .me-butn .btn1:hover{
+    color: black;
+}
+
+.me-left .me-butn  .me-cursor{
+    background-color: rgb(255, 255, 255) ;
+    width: 10vw;
+    height: 15vh;
+    border-radius: 50%;
+    position: fixed;
+}
+
+/* right  */
+.main .this-me .me-right {
+    width: 55%;
+    padding: 3rem 5rem;
+}
+
+.main .this-me .me-right img {
+    width: 100%;
+}
+
+
+
+/*------------ about me ----------------  */
+
+.main .about-me{
+    margin-top: 3rem;
+    display: flex;
+    padding: 0 7rem;
+}
+
+.main .about-me .about-left{
+    width: 50%;
+}
+ .about-left img{
+    width: 100%;
+}
+ .about-right{
+    width: 50%;
+    padding: 2.2rem 0; 
+    padding-left: 5rem;
+}
+
+.about-right h2 {
+    font-size: 1.2rem;
+    color: rgb(90, 90, 90);
+    margin-bottom: 1rem;
+}
+
+.about-right h1 {
+    font-size: 3rem;
+    color: rgb(45, 45, 45);
+    margin-bottom: 2rem;
+}
+
+.about-right p{
+    font-size: .9rem;
+    color: rgb(134, 134, 134);
+}
+
+.ab-butn{
+    margin-top: 2.5rem;
+    width: 12vw;
+    height: 8vh;
+    position: relative;
+    background-color: #000000;
+}
+
+.ab-butn .btn2{
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+}
+.ab-butn .btn2:hover{
+    color: black;
+}
+
+.ab-butn  .ab-cursor{
+    background-color: rgb(255, 255, 255) ;
+    width: 10vw;
+    height: 15vh;
+    border-radius: 50%;
+    position: fixed;
+}
+
+
+/* --------------- my offered services  ----------------- */
+
+.my_services {
+    text-align: center;
+    /* padding: 0 1rem; */
+    margin: 7rem;
+}
+/*----- services_top -------*/
+.my_services .services_top h1{
+    font-size: 2.5rem;
+    color: rgb(45, 45, 45);
+}
+
+.my_services .services_top p{
+    font-size: .9rem;
+    color: rgb(115, 115, 115);
+    padding: 0 14rem;
+}
+
+/*------- services_bottom -------- */
+.my_services .services_bottom{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.my_services .services_bottom .services{
+    width: 30%;
+    /* border: 1px solid black; */
+    margin: 2rem 1rem;
+    /* z-index: 999; */
+}
+
+.services_bottom .services i{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: .1s linear;
+}
+.services_bottom .services h2{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.services_bottom .services p{
+    font-size: .8rem;
+    color: rgb(127, 127, 127);
+    line-height: 1.4rem;
+}
+
+ .services_bottom .services:hover{
+    color: #8e9bfe;
+}
+
+.services_bottom .ser_bot_cursor{
+    height: 5vh;
+    width: 2.5%;
+    box-shadow: 1px 1px 10px rgb(172, 172, 172);
+    border-radius: 50%;
+    /* position: absolute; */
+    position: fixed;
+} 
+
+
+/*------------------ random number --------------------- */
+
+.ranodm_num{
+    height: 50vh;
+    width: 100%;
+    /* border: 1px solid black;  */
+    background-color: #6BB0FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 9rem;
+    margin-bottom: 10rem;
+    color: white;
+    padding: 0 7rem;
+}
+.ranodm_num .counter h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.ranodm_num .counter p{
+    font-size: 1.1rem;
+}
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>   Our Latest Featured Projects   <<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.latest-feature-projects{
+
+}
+
+/* lfp title  */
+.latest-feature-projects .lfp-title{
+    text-align: center;
+    width: 100%;
+}
+
+.lfp-title h2{
+    font-size: 2.5rem ; 
+    color: rgb(45, 45, 45);                                                                                                                                                                                                                            ;
+}
+
+.lfp-title p{
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: rgb(115, 115, 115);
+}
+
+/* lfp-btns */
+
+.latest-feature-projects .lfp-btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.lfp-btns .btn{
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.lfp-btns .btn:first-child{
+    color: #9490FF;
+}
+.btn:hover{
+    border-bottom: 1px solid #938ffc;
+}
+
+
+/* lfp-product */
+.latest-feature-projects .lfp-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 7rem;
+}
+
+.lfp-product {
+    text-align: center;
+}
+
+.p-img-notactive{
+    display: none;
+}
+
+
+/* >>>>>>>>>>>>>>>> Client’s Feedback About Me <<<<<<<<<<<<<<<<<<> */
+
+.client-feedback{
+    margin-top: 15rem;
+}
+.client-feedback .cf-title{
+    text-align: center;
+}
+.cf-title h2{
+    font-size: 2.5rem ; 
+    color: rgb(45, 45, 45);        
+}
+.cf-title p{
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: rgb(115, 115, 115);
+}
+
+/*------ client-detail */
+.client-feedback .client-detail{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 7rem;
+    gap: 2rem;
+}
+
+/* .client-detail-slider */
+.client-detail-slider{
+    width: 60vw;
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 2px #d8d5ff;
+    cursor: pointer;
+}
+
+.client-detail-slider:hover{
+    color: #8480fa;
+}
+
+/* slider  */
+.client-detail-slider .client-slider{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    padding: .5rem 1rem;
+    display: flex;
+    gap: 1rem 2rem;
+    transition: 1s ease-out;
+}
+
+.client-slider img{
+    width: 20%;
+    height: 60%;
+}
+
+.client-slider .cds-content .cd-para1{
+    font-size: 1.2rem;
+    color: rgb(116, 112, 112);
+}
+
+.client-slider .cds-content h4{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.client-slider .cds-content .cd-para2{
+    font-size: 1.2rem;
+    color: rgb(103, 103, 103);
+}
+
+
+/* ----cd-btns */
+.cd-btns{
+    display: flex;
+    justify-content: center;
+    gap: 2rem ;
+}
+
+.cd-btns button{
+    cursor: pointer;
+    padding: .2rem 1rem;
+    border: none;
+    color: none;
+    box-shadow: 1px 1px 1px 1px rgb(118, 117, 117);
+    transition: .2s linear;
+}
+.cd-btns button:hover{
+    background-color: #8480fa;
+}
+
+.cd-btns button i{
+    font-size: 1.5rem;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>> Choose Your Plan <<<<<<<<<<<<<<<<<<< */
+
+.choose-you-plan{
+    margin-top: 15rem;
+}
+
+/* cpy title  */
+.cyp-title{
+    text-align: center;
+}
+.choose-you-plan .cyp-title h2{
+    font-size: 2.5rem;
+    color: rgb(45, 45, 45);
+}
+.choose-you-plan .cyp-title p{
+    font-size: .8rem;
+    color: rgb(115, 115, 115);
+}
+
+/* cyp-cards */
+.cyp-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .1rem;
+    margin-top: 5rem;
+}
+
+.cyp-card{
+    /* border: 1px solid black; */
+    width: 22vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s linear;
+    padding: 2rem 0;
+}
+
+.cyp-card:hover{
+    background-color: #68B4FC;
+}
+
+.cyp-card .cyp-one{
+    background-color: #e8effa;
+    background-color: #bdd5fb;
+    width: 40%;
+    padding: 1.5rem;
+    border-radius: 50%;
+    /* margin-top: 2rem; */
+}
+.cyp-card .cyp-one .cyp-txt-one{
+    width: 100%;
+    background-color: #f4f8fc;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.cyp-card h4{
+    font-size: 1.2rem;
+    padding-top: 1.5rem ;
+}
+
+.cyp-card p{
+    padding: .7rem 0 ;
+    font-size: .8rem;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    color: rgb(129, 126, 126);
+    transition: .1s ease-out;
+}
+
+.cyp-cards h4+p{
+    padding-bottom: 2rem;
+}
+
+.cyp-card h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cyp-card .cyp-card-btn{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: .5rem 5rem;
+    border: none;
+    background-color: white;
+    transition: .1s ease-out;
+    display: none;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>> Latest Posts From Our blog  <<<<<<<<<<<<<<<<<<<<<<<< */
+
+.our-blog{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.ob-title{
+    text-align: center;
+}
+
+.our-blog .ob-title h2{
+    font-size: 2.5rem;
+    color: rgb(45, 45, 45);
+} 
+
+.our-blog .ob-title p{
+    font-size: .8rem;
+    color: rgb(115, 115, 115);
+    padding: 0 20rem;
+    margin-top: 1rem;
+} 
+
+/* ob-cards  */
+.ob-cards {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.ob-cards .ob-card1{
+    width: 25vw;
+}
+
+/* card 1 */
+.ob-card1 .ob-img{
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+.ob-card1:hover{
+    color: #8480fa;
+    cursor: pointer;
+}
+.ob-img img{
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in;
+}
+
+.ob-img:hover img{
+    transform: scale(1.1);
+}
+
+/* ob-img-contant1  */
+.ob-img-contant1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .3rem;
+    box-shadow: 0px 1px 1px .5px #ecf5fc;
+}
+/* ob-img-cont-left  */
+.ob-img-cont-left{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.ob-img-cont-left img{
+    height: 5vh;
+}
+.ob-img-cont-left h3{
+    color: #222222;
+    font-size: .9rem;
+}
+
+/* ob-img-cont-right */
+.ob-img-cont-right{
+    display: flex;
+    align-items: center;
+}
+.ob-img-cont-right ul{
+    display: flex;
+    gap: .8rem;
+}
+
+.ob-img-cont-right ul li{
+    list-style-type: none;
+    font-size: .9rem;
+    color:rgb(115, 115, 115);
+}
+
+/* ob-img-contant2  */
+.ob-img-contant2{
+    margin-top: 2rem;
+}
+
+.ob-img-contant2 h2{
+    font-size: 1.12rem;
+    margin-bottom: .5rem;
+    transition: .2s ease-in-out;
+}
+.ob-img-contant2 p{
+    font-size: .85rem;
+    color: rgb(145, 144, 144);
+    line-height: 1.5rem; 
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>> brand area  <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.brand-area{
+    width: 100%;
+    height: 40vh;
+    background-color: #71A9FE;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    align-items: center;
+    overflow: hidden;
+}
+
+.brand-area  img{
+    margin: 0 3rem;
+}
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> footer <<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+footer {
+    width: 100%;
+    padding: 8rem;
+    background-color: #04091E;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer h2{
+    font-size: 1.1rem;
+    color: white;
+}
+footer p{
+    font-size: .9rem;
+    color: rgb(98, 97, 97);
+}
+
+
+/* about  */
+.footer-about p{
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+
+/* newsletter  */
+.footer-newsletter p{
+    padding-top: 1.5rem;
+}
+.footer-newsletter .fn-search{
+    padding-top: 1.5rem;
+    display: flex;
+}
+.footer-newsletter .fn-search input{
+    font-size: 1rem;
+    width: 29vw;
+    padding: .3rem 1rem;
+}
+.footer-newsletter .fn-search i{
+    background-color: #8490FF;
+    color: white;
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
+}
+
+/* follow me  */
+.footer-follow-me p{
+    padding: 1rem 0;
+}
+.ffm-social{
+    display: flex;
+    gap: 1.1rem; 
+}
+.ffm-social i{
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.ffm-social i:hover{
+    color: #8480fa;
+}

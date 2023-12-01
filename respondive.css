@@ -1,0 +1,44 @@
+
+/* sidebar  */
+
+.main .sidebar { 
+    width: 31%;
+    height: 100vh;
+    position: absolute;
+    top: .0%;
+    left: 0%;
+    box-shadow: #8492FF 0px 1px 9px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1rem;
+} 
+.main .sidebar li{
+    list-style-type: none;
+    padding: .5rem 1rem;
+}
+
+.main .sidebar li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+nav .sidebar li .fnavchild{
+    color: #8492FF;
+}
+
+
+
+@media (max-width: 860px){
+.main nav .ul{
+    display: none;
+}
+.menu{
+    display: block;
+}
+.menu .bar{
+    display: block;
+}
+
+} 
